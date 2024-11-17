@@ -1,0 +1,289 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366;
+    padding: 1px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    padding: 0px 50px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Ensure vertical alignment */
+}
+
+.nav-links li,
+.more-menu {
+    margin-left: 30px; /* Apply the same margin as other menu items */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.btn-login {
+    background-color: #ff6600;
+    border-radius: 4px;
+}
+
+/* More Menu Styles */
+.more-menu {
+    position: relative;
+}
+
+.hamburger {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    padding: 8px 0; /* Match padding with other items */
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #003366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.dropdown li {
+    list-style: none;
+    padding: 15px 20px;
+    text-align: right;
+    border-bottom: 1px solid #004080;
+}
+
+.dropdown li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown li a:hover {
+    background-color: #004080;
+}
+
+.dropdown .close {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropdown .close:hover {
+    background-color: #ff3300;
+}
+
+/* Contact Info in Header */
+.header span {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 14px;
+    color: #fca311;
+}
+
+/* Main Container */
+.container {
+    background-color: ;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 0 px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* College Overview Section */
+.college-overview {
+    text-align: center;
+}
+
+/* Image Styling */
+.college-overview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Title Styling */
+.college-overview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraph Styling */
+.college-overview p {
+    text-align: justify;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Contact Information */
+.contact-info {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #fca311;
+}
+
+/* Social Icons */
+.contact-info p {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header span {
+        font-size: 12px;
+        right: 10px;
+    }
+    .college-overview h2 {
+        font-size: 24px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366;
+    color: black;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-column form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.footer-column form button {
+    padding: 10px;
+    background-color: #ff6600;
+    border: none;
+    color: black;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #ff3300;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+footer p {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: black;
+}

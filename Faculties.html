@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACEM College Facilities Overview">
+    <link rel="stylesheet" href="About.css">
+    <title>ACEM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .facility-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .facility {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .facility img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .facility h2 {
+            color: #34495e;
+            margin: 10px 0;
+        }
+        .facility p {
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .facility {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/images/logo-primary.webp" alt="College Logo"></a>
+        </div>
+        <div class="container">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html"o>About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="Faculties.html">Facilities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="btn-login">Log In</a></li>
+                    
+                    <!-- More Menu (Hamburger) -->
+                    <div class="more-menu">
+                        <div class="hamburger" id="hamburger">
+                            &#9776;
+                        </div>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="#">PYQ Papers</a></li>
+                            <li><a href="#">Notes</a></li>
+                            <li><a href="#">Recorded Lectures</a></li>
+                            <li><a href="#">Fee Details</a></li>
+                            <li><a href="pdf/first_year_UG_scheme_syllabus_02082018.pdf">Syllabus</a></li>
+                            <li><a href="#">Attendance</a></li>
+                            <li class="close" id="close">&times;</li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="college-overview">
+            <img src="images/image copy.png" alt="College Building">
+        </div>    
+    </div>
+
+    <h1>Our Facilities</h1>
+
+    <div class="facility-section">
+        <div class="facility">
+            <img src="library.jpg" alt="Library">
+            <h2>Library</h2>
+            <p>Our state-of-the-art library provides students with access to a vast collection of academic resources, research papers, and journals for their studies and research work.</p>
+        </div>
+
+        <div class="facility">
+            <img src="laboratory.jpg" alt="Laboratory">
+            <h2>Laboratories</h2>
+            <p>Our advanced laboratories are equipped with the latest technology, offering students hands-on experience in various disciplines, including electronics, mechanical, and computer sciences.</p>
+        </div>
+
+        <div class="facility">
+            <img src="sports.jpg" alt="Sports Facilities">
+            <h2>Sports Facilities</h2>
+            <p>We provide extensive sports facilities, including a gymnasium, basketball courts, and fields for outdoor activities, promoting physical fitness and teamwork.</p>
+        </div>
+
+        <div class="facility">
+            <img src="hostel.jpg" alt="Hostel">
+            <h2>Hostel</h2>
+            <p>Our on-campus hostels offer a comfortable and secure environment for students, ensuring they have a homely and conducive atmosphere for studying.</p>
+        </div>
+
+        <div class="facility">
+            <img src="cafeteria.jpg" alt="Cafeteria">
+            <h2>Cafeteria</h2>
+            <p>Our cafeteria offers a variety of healthy and delicious meals at affordable prices, providing students with a space to relax and recharge during their breaks.</p>
+        </div>
+
+        <div class="facility">
+            <img src="transport.jpg" alt="Transport Facilities">
+            <h2>Transport</h2>
+            <p>We provide reliable transport services, connecting the campus with various parts of the city, ensuring safe and convenient commuting for students and staff.</p>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div class="footer-column">
+                    <h3>Featured Links</h3>
+                    <ul>
+                        <li><a href="Admission.html">Admissions 2024-25</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Download Prospectus</a></li>
+                        <li><a href="#">AICTE Approval Letter</a></li>
+                        <li><a href="contact.html">Locations</a></li>
+                        <li><a href="#">Mandatory Disclosure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Featured Links</h3>
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Faculty & Staff</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">University Affiliation Letter</a></li>
+                        <li><a href="#">Media Room</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><span>📞</span> +91-8527538785</li>
+                        <li><span>✉</span> admissions@acem.edu.in</li>
+                    </ul>
+                    <h3>Newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="enter your e-mail here">
+                        <button type="submit">🚀</button>
+                    </form>
+                </div>
+                <div class="footer-column">
+                    <h3>Gallery</h3>
+                    <div class="gallery">
+                        <img src="images/3 (1).webp" alt="Gallery Image 1">
+                        <img src="images/2 (1).webp" alt="Gallery Image 2">
+                        <img src="images/1 (1).webp" alt="Gallery Image 3">
+                        <img src="images/6.webp" alt="Gallery Image 4">
+                        <img src="images/5.webp" alt="Gallery Image 5">
+                        <img src="images/4 (1).webp" alt="Gallery Image 6">
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/AravaliInstituteFaridabad?rdid=ZsparbHvwEr8MolJ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19dS6aSKaP%2F"><img src="images/fb.png" alt="Facebook"></a>
+                        <a href="https://x.com/acem2008?t=nB-0HfwBEJbAVjbzZstI7A&s=09"><img src="images/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/school/aravali-college-of-engineering-and-management/posts/?feedView=all"><img src="images/link.png" alt="LinkedIn"></a>
+                        <a href="https://www.youtube.com/@aravalicollege"><img src="images/yt.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2021 Aravali All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
